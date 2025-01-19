@@ -10,7 +10,7 @@ logging.basicConfig(level = logging.INFO, format = '[%(asctime)s]: %(message)s:'
 project_name = "Hate_Speech_Detection"
 
 list_of_files = [
-    f"{project_name}/components/__init__.py", #need to create a constructor file in every folder, here i am creating folder structure
+    f"{project_name}/components/__init__.py", # need to create a constructor file in every folder, here i am creating folder structure
     f"{project_name}/components/data_ingestion.py",
     f"{project_name}/components/data_transformation.py",
     f"{project_name}/components/model_trainer.py",
@@ -44,6 +44,7 @@ for filepath in list_of_files:
     filepath = Path(filepath)
 
     filedir, filename = os.path.split(filepath)
+    
 
     if filedir !="":
         os.makedirs(filedir, exist_ok = True)
