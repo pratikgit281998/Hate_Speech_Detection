@@ -16,3 +16,6 @@ conda activate HATE_SPEECH_DETECTION
 '''bash
 pip install -r requirements.txt
 '''
+
+
+use "conda env list" to get all the available environments
